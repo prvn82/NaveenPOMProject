@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="41626" started-at="2018-10-30T11:24:19Z" finished-at="2018-10-30T11:25:01Z">
+    <groups>
+    </groups>
+    <test name="Login" duration-ms="22535" started-at="2018-10-30T11:24:19Z" finished-at="2018-10-30T11:24:42Z">
+      <class name="com.Tesuto.TestCases.LoginPageTest">
+        <test-method status="PASS" signature="initialization()[pri:0, instance:com.Tesuto.TestCases.LoginPageTest@1794d431]" name="initialization" is-config="true" duration-ms="14086" started-at="2018-10-30T11:24:19Z" finished-at="2018-10-30T11:24:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="PASS" signature="Setup()[pri:0, instance:com.Tesuto.TestCases.LoginPageTest@1794d431]" name="Setup" is-config="true" duration-ms="22" started-at="2018-10-30T11:24:34Z" finished-at="2018-10-30T11:24:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="validateLoginPageTilteTest()[pri:1, instance:com.Tesuto.TestCases.LoginPageTest@1794d431]" name="validateLoginPageTilteTest" duration-ms="28" started-at="2018-10-30T11:24:34Z" finished-at="2018-10-30T11:24:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLoginPageTilteTest -->
+        <test-method status="PASS" signature="validateCRMImageTest()[pri:2, instance:com.Tesuto.TestCases.LoginPageTest@1794d431]" name="validateCRMImageTest" duration-ms="36" started-at="2018-10-30T11:24:34Z" finished-at="2018-10-30T11:24:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCRMImageTest -->
+        <test-method status="PASS" signature="LoginTest()[pri:3, instance:com.Tesuto.TestCases.LoginPageTest@1794d431]" name="LoginTest" duration-ms="8338" started-at="2018-10-30T11:24:34Z" finished-at="2018-10-30T11:24:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+      </class> <!-- com.Tesuto.TestCases.LoginPageTest -->
+    </test> <!-- Login -->
+    <test name="HomePageTest" duration-ms="19067" started-at="2018-10-30T11:24:42Z" finished-at="2018-10-30T11:25:01Z">
+      <class name="com.Tesuto.TestCases.HomePageTest">
+        <test-method status="PASS" signature="initialization()[pri:0, instance:com.Tesuto.TestCases.HomePageTest@5bcab519]" name="initialization" is-config="true" duration-ms="8217" started-at="2018-10-30T11:24:42Z" finished-at="2018-10-30T11:24:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="PASS" signature="Setup()[pri:0, instance:com.Tesuto.TestCases.HomePageTest@5bcab519]" name="Setup" is-config="true" duration-ms="8321" started-at="2018-10-30T11:24:50Z" finished-at="2018-10-30T11:24:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="verifyHomePageTitleTest()[pri:1, instance:com.Tesuto.TestCases.HomePageTest@5bcab519]" name="verifyHomePageTitleTest" duration-ms="19" started-at="2018-10-30T11:24:59Z" finished-at="2018-10-30T11:24:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitleTest -->
+        <test-method status="PASS" signature="validateUserNameLableTest()[pri:2, instance:com.Tesuto.TestCases.HomePageTest@5bcab519]" name="validateUserNameLableTest" duration-ms="76" started-at="2018-10-30T11:24:59Z" finished-at="2018-10-30T11:24:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUserNameLableTest -->
+        <test-method status="PASS" signature="clickOnContactsTest()[pri:3, instance:com.Tesuto.TestCases.HomePageTest@5bcab519]" name="clickOnContactsTest" duration-ms="2428" started-at="2018-10-30T11:24:59Z" finished-at="2018-10-30T11:25:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnContactsTest -->
+      </class> <!-- com.Tesuto.TestCases.HomePageTest -->
+    </test> <!-- HomePageTest -->
+  </suite> <!-- Suite -->
+</testng-results>
