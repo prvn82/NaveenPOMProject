@@ -20,8 +20,8 @@
         <methods>
           <include name="verifyHomePageTitleTest"/>
           <include name="Setup"/>
+          <include name="clickOnNewContactTest"/>
           <include name="validateUserNameLableTest"/>
-          <include name="clickOnContactsTest"/>
           <include name="initialization"/>
         </methods>
       </class> <!-- com.Tesuto.TestCases.HomePageTest -->

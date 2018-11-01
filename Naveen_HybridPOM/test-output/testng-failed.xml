@@ -1,30 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Login(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Tesuto.TestCases.LoginPageTest">
+      <class name="com.Tesuto.TestCases.ContactPageTest">
         <methods>
-          <include name="Setup"/>
-          <include name="validateCRMImageTest"/>
-          <include name="validateLoginPageTilteTest"/>
-          <include name="initialization"/>
-          <include name="LoginTest"/>
-        </methods>
-      </class> <!-- com.Tesuto.TestCases.LoginPageTest -->
-    </classes>
-  </test> <!-- Login(failed) -->
-  <test thread-count="5" name="HomePageTest(failed)">
-    <classes>
-      <class name="com.Tesuto.TestCases.HomePageTest">
-        <methods>
-          <include name="verifyHomePageTitleTest"/>
-          <include name="Setup"/>
-          <include name="validateUserNameLableTest"/>
-          <include name="clickOnContactsTest"/>
+          <include name="setup"/>
+          <include name="validateEnterContactDetailsTest"/>
           <include name="initialization"/>
         </methods>
-      </class> <!-- com.Tesuto.TestCases.HomePageTest -->
+      </class> <!-- com.Tesuto.TestCases.ContactPageTest -->
     </classes>
-  </test> <!-- HomePageTest(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

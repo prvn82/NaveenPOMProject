@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Tesuto.TestCases.HomePageTest">
+      <class name="com.Tesuto.TestCases.ContactPageTest">
         <methods>
-          <include name="Setup"/>
-          <include name="CloseDriver"/>
-          <include name="validateUserNameLableTest"/>
+          <include name="setup"/>
+          <include name="validateEnterContactDetailsTest"/>
           <include name="initialization"/>
         </methods>
-      </class> <!-- com.Tesuto.TestCases.HomePageTest -->
+      </class> <!-- com.Tesuto.TestCases.ContactPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
