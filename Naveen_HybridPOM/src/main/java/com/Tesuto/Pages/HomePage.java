@@ -5,6 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.Tesuto.TestBase.TestBase;
+import com.Tesuto.Utlities.TestUtil;
 
 public class HomePage extends TestBase {
 	
@@ -22,6 +23,8 @@ public class HomePage extends TestBase {
 	
 	@FindBy(xpath="//a[contains(text(),'Tasks')]")
 	private WebElement Taskslink;
+	
+
 	
 	
 	public HomePage() {
@@ -42,6 +45,7 @@ public class HomePage extends TestBase {
 	
 	//pub
 	public ContactsPage clickOnContacts() {
+		TestUtil.SwitchFrame("mainpanel");
 		Contactslink.click();
 		return new ContactsPage();
 	}
@@ -51,6 +55,7 @@ public class HomePage extends TestBase {
 		DealsLink.click();
 		return new DealsPage();
 	}
+	
 	
 	
 	

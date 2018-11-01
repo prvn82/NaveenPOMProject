@@ -30,15 +30,16 @@ public class HomePageTest extends TestBase {
 
 	@Test(priority = 2)
 	public void validateUserNameLableTest() {
-		TestUtil.SwitchFrame("mainpanel");
+		//TestUtil.SwitchFrame("mainpanel");
 
 		Assert.assertTrue(home.validateUserNameLable());
 	}
 	
-	@Test(priority=3)
-	public void clickOnContactsTest() {
-		home.clickOnContacts();
-		//return new ContactsPage();
-	}
-
+//	@Test(priority=3)
+//	public void clickOnContactsTest() {
+//		home.clickOnContacts();
+//		//return new ContactsPage();
+//	}
+	
+	
 }
