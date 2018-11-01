@@ -1,5 +1,11 @@
 package com.Tesuto.Utlities;
 
+import java.io.File;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+
 import com.Tesuto.TestBase.TestBase;
 
 public class TestUtil extends TestBase {
@@ -13,6 +19,15 @@ public class TestUtil extends TestBase {
 		
 		driver.switchTo().frame(framName);
 		
+	}
+	
+	//ScreenShot method
+	
+	public static void takeScreenShot() throws Exception {
+		File screenshotAs = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		String Path=System.getProperty("user.dir")+"/ScreenShot/"+System.currentTimeMillis()+".png";
+		
+		FileUtils.copyFile(screenshotAs, new File(Path));
 	}
 
 }

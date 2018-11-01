@@ -17,9 +17,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+
+import com.Tesuto.Utlities.WebDriverListener;
 
 public class TestBase {
 
@@ -36,6 +39,9 @@ public class TestBase {
 	
 	protected static Workbook book;
 	protected static Sheet sheet;
+	
+	protected static WebDriverListener edriver;
+	protected static EventFiringWebDriver eventListener;
 
 	@BeforeTest
 	public static void initialization() throws Exception {
@@ -53,6 +59,9 @@ public class TestBase {
 			Config = new Properties();
 
 			Config.load(fs);
+			//Setup for WebdriverListenere
+			
+			
 
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -88,11 +97,11 @@ public class TestBase {
 			throw new Exception("Invalid Browser Name");
 		}
 
-		// driver.manage().window().maximize();
-		// driver.manage().deleteAllCookies();
-		// driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
-		// driver.manage().timeouts().implicitlyWait(Integer.valueOf(Config.getProperty("ImplicitWait")),
-		// TimeUnit.SECONDS);
+		
+		eventListener = new EventFiringWebDriver(driver);
+		edriver = new WebDriverListener();
+		eventListener.register(edriver);
+		driver=eventListener;
 
 		driver.get(Config.getProperty("url"));
 		driver.manage().timeouts().implicitlyWait(Integer.valueOf(Config.getProperty("ImplicitWait")),

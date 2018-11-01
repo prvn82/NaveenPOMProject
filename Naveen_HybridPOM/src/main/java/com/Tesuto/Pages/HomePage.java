@@ -40,6 +40,8 @@ public class HomePage extends TestBase {
 	}
 	
 	public boolean validateUserNameLable() {
+		TestUtil.SwitchFrame("mainpanel");
+
 		return userNameLable.isDisplayed();
 	}
 	
