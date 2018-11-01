@@ -7,7 +7,6 @@ import org.testng.annotations.Test;
 import com.Tesuto.Pages.HomePage;
 import com.Tesuto.Pages.LoginPage;
 import com.Tesuto.TestBase.TestBase;
-import com.Tesuto.Utlities.TestUtil;
 
 public class HomePageTest extends TestBase {
 

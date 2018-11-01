@@ -7,8 +7,7 @@ import com.Tesuto.Pages.ContactsPage;
 import com.Tesuto.Pages.HomePage;
 import com.Tesuto.Pages.LoginPage;
 import com.Tesuto.TestBase.TestBase;
-
-import sun.util.logging.resources.logging;
+import com.Tesuto.TestData.TestData;
 
 public class ContactPageTest extends TestBase {
 	
@@ -27,10 +26,11 @@ public class ContactPageTest extends TestBase {
 		
 	}
 	
-	@Test
-	public void validateEnterContactDetailsTest() {
+	
+	@Test(dataProvider="TestData",dataProviderClass=TestData.class)
+	public void validateEnterContactDetailsTest(String title,String fname,String lname) {
 		contact.clickOnNewContact();
-		contact.enterNewContactDetails("Miss", "Praveen1", "Kumar1");
+		contact.enterNewContactDetails(title,fname,lname);
 	}
 
 }

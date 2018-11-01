@@ -1,21 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15759" started-at="2018-11-01T13:15:55Z" finished-at="2018-11-01T13:16:11Z">
+  <suite name="Default suite" duration-ms="30023" started-at="2018-11-01T16:48:35Z" finished-at="2018-11-01T16:49:05Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="15759" started-at="2018-11-01T13:15:55Z" finished-at="2018-11-01T13:16:11Z">
+    <test name="Default test" duration-ms="30023" started-at="2018-11-01T16:48:35Z" finished-at="2018-11-01T16:49:05Z">
       <class name="com.Tesuto.TestCases.ContactPageTest">
-        <test-method status="PASS" signature="initialization()[pri:0, instance:com.Tesuto.TestCases.ContactPageTest@1794d431]" name="initialization" is-config="true" duration-ms="4161" started-at="2018-11-01T13:15:55Z" finished-at="2018-11-01T13:15:59Z">
+        <test-method status="PASS" signature="initialization()[pri:0, instance:com.Tesuto.TestCases.ContactPageTest@4667ae56]" name="initialization" is-config="true" duration-ms="5186" started-at="2018-11-01T16:48:35Z" finished-at="2018-11-01T16:48:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.Tesuto.TestCases.ContactPageTest@1794d431]" name="setup" is-config="true" duration-ms="7035" started-at="2018-11-01T13:15:59Z" finished-at="2018-11-01T13:16:06Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.Tesuto.TestCases.ContactPageTest@4667ae56]" name="setup" is-config="true" duration-ms="6048" started-at="2018-11-01T16:48:40Z" finished-at="2018-11-01T16:48:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="validateEnterContactDetailsTest()[pri:0, instance:com.Tesuto.TestCases.ContactPageTest@1794d431]" name="validateEnterContactDetailsTest" duration-ms="4548" started-at="2018-11-01T13:16:06Z" finished-at="2018-11-01T13:16:11Z">
+        <test-method status="PASS" signature="validateEnterContactDetailsTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.Tesuto.TestCases.ContactPageTest@4667ae56]" name="validateEnterContactDetailsTest" duration-ms="5824" started-at="2018-11-01T16:48:46Z" data-provider="TestData" finished-at="2018-11-01T16:48:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sir]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Vivan]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[richard]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEnterContactDetailsTest -->
+        <test-method status="PASS" signature="validateEnterContactDetailsTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.Tesuto.TestCases.ContactPageTest@4667ae56]" name="validateEnterContactDetailsTest" duration-ms="5292" started-at="2018-11-01T16:48:52Z" data-provider="TestData" finished-at="2018-11-01T16:48:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mr.]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Raman]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Singh]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEnterContactDetailsTest -->
+        <test-method status="PASS" signature="validateEnterContactDetailsTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.Tesuto.TestCases.ContactPageTest@4667ae56]" name="validateEnterContactDetailsTest" duration-ms="4123" started-at="2018-11-01T16:48:57Z" data-provider="TestData" finished-at="2018-11-01T16:49:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Prof.]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Anuja]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Verma]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEnterContactDetailsTest -->
+        <test-method status="PASS" signature="validateEnterContactDetailsTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.Tesuto.TestCases.ContactPageTest@4667ae56]" name="validateEnterContactDetailsTest" duration-ms="3519" started-at="2018-11-01T16:49:01Z" data-provider="TestData" finished-at="2018-11-01T16:49:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Miss]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Rani]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Gerg]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateEnterContactDetailsTest -->
