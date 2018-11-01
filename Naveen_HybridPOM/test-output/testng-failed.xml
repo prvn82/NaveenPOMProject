@@ -6,7 +6,8 @@
       <class name="com.Tesuto.TestCases.ContactPageTest">
         <methods>
           <include name="setup"/>
-          <include name="validateEnterContactDetailsTest"/>
+          <include name="validateEnterContactDetailsTest" invocation-numbers="2"/>
+          <include name="CloseDriver"/>
           <include name="initialization"/>
         </methods>
       </class> <!-- com.Tesuto.TestCases.ContactPageTest -->
