@@ -15,6 +15,7 @@ public class HomePageTest extends TestBase {
 
 	@BeforeClass
 	public void Setup() {
+		TestBase();
 
 		login = new LoginPage();
 		home = login.Login(Config.getProperty("username"), Config.getProperty("password"));

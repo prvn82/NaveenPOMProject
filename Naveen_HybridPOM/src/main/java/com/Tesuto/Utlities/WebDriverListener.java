@@ -14,6 +14,7 @@ public class WebDriverListener extends TestBase implements WebDriverEventListene
 	public void beforeAlertAccept(WebDriver driver) {
 		// TODO Auto-generated method stub
 		
+		
 	}
 
 	@Override
@@ -45,6 +46,7 @@ public class WebDriverListener extends TestBase implements WebDriverEventListene
 		// TODO Auto-generated method stub
 		
 		System.out.println(url+ " has opened in "+Config.getProperty("BrowerName"));
+		//test.info("Url Opened");
 		
 	}
 

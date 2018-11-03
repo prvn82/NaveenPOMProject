@@ -19,6 +19,7 @@ public class ContactPageTest extends TestBase {
 	
 	@BeforeClass
 	public void setup() {
+		TestBase();
 		
 		login = new LoginPage();
 		home = login.Login(Config.getProperty("username"), Config.getProperty("password"));

@@ -4,7 +4,7 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.Tesuto.Pages.HomePage;
@@ -12,6 +12,8 @@ import com.Tesuto.Pages.HomePage;
 import com.Tesuto.Pages.LoginPage;
 import com.Tesuto.TestBase.TestBase;
 
+
+//@Listeners(com.Tesuto.Utlities.Listener.class)
 public class LoginPageTest extends TestBase {
 	
 	private LoginPage login;
@@ -20,15 +22,20 @@ public class LoginPageTest extends TestBase {
 	
 	@BeforeClass
 	public void Setup() {
+		 TestBase();
 		 login = new LoginPage();
 	}
 	
 	@Test(priority=1)
 	public void validateLoginPageTilteTest() {
 		
-		System.out.println(login);
+		//System.out.println(login);
 		
+			
 		assertEquals(login.validateLoginPageTile(), "#1 Free CRM software in the cloud for sales and service");
+		
+		
+		
 		
 	}
 	

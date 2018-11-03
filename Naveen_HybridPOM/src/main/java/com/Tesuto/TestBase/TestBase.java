@@ -23,6 +23,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
 import com.Tesuto.Utlities.WebDriverListener;
+import com.aventstack.extentreports.ExtentTest;
 
 public class TestBase {
 
@@ -40,12 +41,17 @@ public class TestBase {
 	protected static Workbook book;
 	protected static Sheet sheet;
 	
+	public ExtentTest test;
+	
+	public ExtentTest createNode;
+	
 	protected static WebDriverListener edriver;
 	protected static EventFiringWebDriver eventListener;
-
-	@BeforeTest
-	public static void initialization() throws Exception {
-
+	
+	
+	public static void TestBase() {
+		// TODO Auto-generated constructor stub
+		
 		try {
 
 			file = new FileInputStream(new File(TestDataPath));
@@ -76,6 +82,12 @@ public class TestBase {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+	}
+
+	@BeforeTest
+	public static void initialization() throws Exception {
+
+		
 
 		String BrowserName = Config.getProperty("BrowerName");
 
@@ -111,11 +123,11 @@ public class TestBase {
 
 	}
 
-//	@AfterTest
-//	public void CloseDriver() {
-//		if(driver!=null) {
-//			driver.quit();
-//		}
-//	}
+	@AfterTest
+	public void CloseDriver() {
+		if(driver!=null) {
+			driver.quit();
+		}
+	}
 
 }
