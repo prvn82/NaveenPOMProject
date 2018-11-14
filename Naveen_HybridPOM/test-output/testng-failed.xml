@@ -10,8 +10,8 @@
         <methods>
           <include name="Setup"/>
           <include name="CloseDriver"/>
+          <include name="validateCRMImageTest"/>
           <include name="initialization"/>
-          <include name="LoginTest"/>
         </methods>
       </class> <!-- com.Tesuto.TestCases.LoginPageTest -->
     </classes>

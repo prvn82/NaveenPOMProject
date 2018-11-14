@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
 //import org.apache.poi.hslf.model.Sheet;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -45,6 +46,8 @@ public class TestBase {
 	
 	public ExtentTest createNode;
 	
+	protected static Logger log;
+	
 	protected static WebDriverListener edriver;
 	protected static EventFiringWebDriver eventListener;
 	
@@ -66,6 +69,8 @@ public class TestBase {
 
 			Config.load(fs);
 			//Setup for WebdriverListenere
+			
+			//log = logger
 			
 			
 

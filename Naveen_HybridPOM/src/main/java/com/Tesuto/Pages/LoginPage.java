@@ -38,7 +38,7 @@ public class LoginPage extends TestBase {
 	@FindBy(xpath="//a/font[text()='Sign Up']")
 	WebElement SigeUp;
 	
-	@FindBy(xpath="//img[@alt='free crm logo']")
+	@FindBy(xpath="//img[@alt='free crm logo1']")
 	WebElement CRM_Logo;
 	
 	//Constructor intitialziing Page Object

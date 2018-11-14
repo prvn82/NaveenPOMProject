@@ -33,6 +33,8 @@ public class WebDriverListener extends TestBase implements WebDriverEventListene
 	public void beforeAlertDismiss(WebDriver driver) {
 		// TODO Auto-generated method stub
 		
+		//log.info(message);
+		
 	}
 
 	@Override
@@ -47,6 +49,7 @@ public class WebDriverListener extends TestBase implements WebDriverEventListene
 		
 		System.out.println(url+ " has opened in "+Config.getProperty("BrowerName"));
 		//test.info("Url Opened");
+		log.info("Navigated");
 		
 	}
 
