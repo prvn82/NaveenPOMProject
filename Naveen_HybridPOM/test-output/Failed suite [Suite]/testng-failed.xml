@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Suite]]">
+  <listeners>
+    <listener class-name="com.Tesuto.Utlities.Listener"/>
+  </listeners>
+  <test thread-count="5" name="Login(failed)(failed)">
+    <classes>
+      <class name="com.Tesuto.TestCases.LoginPageTest">
+        <methods>
+          <include name="Setup"/>
+          <include name="CloseDriver"/>
+          <include name="validateCRMImageTest"/>
+          <include name="initialization"/>
+        </methods>
+      </class> <!-- com.Tesuto.TestCases.LoginPageTest -->
+    </classes>
+  </test> <!-- Login(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->
